@@ -10,4 +10,6 @@ RUN go mod download
 COPY *.go ./
 RUN CGO_ENABLED=0 GOOS=linux go build -o /docker-example
 
+EXPOSE 8000
+
 CMD [ "/docker-example" ]
