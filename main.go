@@ -1,7 +1,7 @@
 package main
 
 import (
-	"docker/internal/controller"
+	"docker-example/internal/controller"
 
 	"github.com/gin-gonic/gin"
 )

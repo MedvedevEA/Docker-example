@@ -11,22 +11,22 @@ type Record struct {
 
 var record = []*Record{}
 
-func GetRecordCount() int {
-	return len(record)
+func GetRecordCount() (int, error) {
+	return len(record), nil
 }
-func GetRecords() []*Record {
-	return record
+func GetRecords() ([]*Record, error) {
+	return record, nil
 }
-func AddRecord(text string) *Record {
+func AddRecord(text string) (*Record, error) {
 	recordId := uuid.New()
 	newRecord := &Record{
 		RecordId: &recordId,
 		Text:     text,
 	}
 	record = append(record, newRecord)
-	return newRecord
+	return newRecord, nil
 }
-func DeleteRecords() int {
+func RemoveRecords() error {
 	record = []*Record{}
-	return len(record)
+	return nil
 }

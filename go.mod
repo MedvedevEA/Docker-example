@@ -1,4 +1,4 @@
-module docker
+module docker-example
 
 go 1.22.1
 
