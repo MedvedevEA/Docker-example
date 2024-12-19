@@ -1,3 +1,3 @@
 # Docker
-Docker's example/
-docker build --tag docker-example:v3.0 --progress plain --no-cache .
+Docker's example\
+docker build --tag docker-example:v1.0 --progress plain --no-cache .
